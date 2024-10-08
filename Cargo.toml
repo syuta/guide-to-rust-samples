@@ -3,4 +3,38 @@ name = "guide-to-rust-samples"
 version = "0.1.0"
 edition = "2021"
 
+[[example]]
+name = "ownership"
+path = "examples/chapter01/ownership.rs"
+
+[[example]]
+name = "ownership_function"
+path = "examples/chapter01/ownership_function.rs"
+
+[[example]]
+name = "ownership_returns"
+path = "examples/chapter01/ownership_returns.rs"
+
+[[example]]
+name = "borrowing"
+path = "examples/chapter01/borrowing.rs"
+
+[[example]]
+name = "borrowing_mut"
+path = "examples/chapter01/borrowing_mut.rs"
+
+[[example]]
+name = "no_ownership"
+path = "examples/chapter01/no_ownership.rs"
+
+[[example]]
+name = "copy_trait"
+path = "examples/chapter01/copy_trait.rs"
+
+[[example]]
+name = "clone_trait"
+path = "examples/chapter01/clone_trait.rs"
+
+
 [dependencies]
+
