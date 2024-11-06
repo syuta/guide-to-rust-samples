@@ -35,6 +35,33 @@ path = "examples/chapter01/copy_trait.rs"
 name = "clone_trait"
 path = "examples/chapter01/clone_trait.rs"
 
+[[example]]
+name = "refs"
+path = "examples/chapter01/refs.rs"
+
+[[example]]
+name = "cow"
+path = "examples/chapter01/cow.rs"
+
+[[example]]
+name = "box"
+path = "examples/chapter01/box.rs"
+
+[[example]]
+name = "rc"
+path = "examples/chapter01/rc.rs"
+
+[[example]]
+name = "cell_refcell_mutex"
+path = "examples/chapter01/cell_refcell_mutex.rs"
+
+[[example]]
+name = "lifetime"
+path = "examples/chapter01/lifetime.rs"
+
+[[example]]
+name = "static"
+path = "examples/chapter01/static.rs"
 
 [dependencies]
 
