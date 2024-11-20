@@ -14,13 +14,16 @@ impl Copy for Rectangle {}
 fn main() {
     // Point構造体の使用
     let p1 = Point { x: 10, y: 20 };
-    let p2 = p1;  // p1がコピーされる
+    let p2 = p1; // p1がコピーされる
     println!("p1: ({}, {})", p1.x, p1.y);
     println!("p2: ({}, {})", p2.x, p2.y);
 
     // Rectangle構造体の使用
-    let r1 = Rectangle { width: 30, height: 40 };
-    let r2 = r1;  // r1がコピーされる
+    let r1 = Rectangle {
+        width: 30,
+        height: 40,
+    };
+    let r2 = r1; // r1がコピーされる
     println!("r1: {}x{}", r1.width, r1.height);
     println!("r2: {}x{}", r2.width, r2.height);
 

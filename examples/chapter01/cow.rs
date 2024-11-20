@@ -13,11 +13,9 @@ fn mod_string(mut cow: Cow<str>) -> Cow<str> {
 }
 
 fn main() {
-
     //不変参照
     let s: &str = "Hello, Immutable World!";
     print_string(s);
-
 
     //可変参照
     let s: &str = "Hello, Mutable World!";

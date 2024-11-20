@@ -2,7 +2,7 @@
 trait HasPrice {
     fn price(&self) -> u32;
     fn discount(&self) -> u32 {
-        self.price() / 10  // デフォルト実装：10%引き
+        self.price() / 10 // デフォルト実装：10%引き
     }
 }
 
@@ -29,7 +29,7 @@ impl HasPrice for Car {
 // 本にHasPriceを実装
 impl HasPrice for Book {
     fn price(&self) -> u32 {
-        self.base_price + self.pages  // ページ数に応じて価格が上がる
+        self.base_price + self.pages // ページ数に応じて価格が上がる
     }
 }
 
@@ -46,5 +46,9 @@ fn main() {
     };
 
     println!("Car price: {}, discount: {}", car.price(), car.discount());
-    println!("Book price: {}, discount: {}", book.price(), book.discount());
+    println!(
+        "Book price: {}, discount: {}",
+        book.price(),
+        book.discount()
+    );
 }

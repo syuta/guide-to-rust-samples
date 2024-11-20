@@ -1,12 +1,12 @@
 fn main() {
     // &
     let x = 5;
-    let y = &x;  // 不変参照を作成
+    let y = &x; // 不変参照を作成
     println!("x: {}, y: {}", x, y);
 
     let mut z = 10;
-    let w = &mut z;  // 可変参照を作成
-    *w += 1;  
+    let w = &mut z; // 可変参照を作成
+    *w += 1;
     println!("z: {}", z);
 
     // ref

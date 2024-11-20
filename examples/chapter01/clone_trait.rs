@@ -4,7 +4,7 @@ struct Square {
 }
 
 fn main() {
-    let original = Square { side_length: 5};
+    let original = Square { side_length: 5 };
     let cloned = original.clone();
     println!("Original square side length: {}", original.side_length);
     println!("Clone square side length: {}", cloned.side_length);

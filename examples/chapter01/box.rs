@@ -15,11 +15,7 @@ fn main() {
     }
 
     // リスト構造の作成
-    let list = List::Cons(1, 
-        Box::new(List::Cons(2, 
-            Box::new(List::Nil)
-        ))
-    );
+    let list = List::Cons(1, Box::new(List::Cons(2, Box::new(List::Nil))));
     println!("List: {:?}", list);
 
     // メモリリークをわざと作成

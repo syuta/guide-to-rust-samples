@@ -24,15 +24,14 @@ fn process_static<T: 'static + Debug>(item: T) {
     println!("item: {:?}", item);
 }
 
-
 fn main() {
     // 定数の使用例
     println!("アプリ名: {}", APP_NAME);
     println!("バージョン: {}", VERSION);
-    
+
     // 構造体の使用
     println!("デフォルト設定: {:?}", DEFAULT_CONFIG);
-    
+
     // 定数を関数に渡す
     print_app_info(APP_NAME, VERSION);
 
@@ -45,6 +44,4 @@ fn main() {
     // エラー: 通常の参照は'staticではない
     //let x = String::from("hello");
     //process_static(&x); // コンパイルエラー
-
 }
-
