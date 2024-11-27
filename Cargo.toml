@@ -71,5 +71,9 @@ path = "examples/chapter02/trait.rs"
 name = "generics"
 path = "examples/chapter02/generics.rs"
 
+[[example]]
+name = "dyn_impl"
+path = "examples/chapter02/dyn_impl.rs"
+
 [dependencies]
 
