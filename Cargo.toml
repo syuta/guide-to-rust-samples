@@ -75,5 +75,19 @@ path = "examples/chapter02/generics.rs"
 name = "dyn_impl"
 path = "examples/chapter02/dyn_impl.rs"
 
-[dependencies]
+[[example]]
+name = "trait_boundary"
+path = "examples/chapter02/trait_boundary.rs"
 
+[[example]]
+name = "async_trait"
+path = "examples/chapter02/async_trait.rs"
+
+[[example]]
+name = "self"
+path = "examples/chapter02/self.rs"
+
+
+[dependencies]
+futures = "0.3.31"
+tokio = { version = "1.41.1", features = ["full"] }
