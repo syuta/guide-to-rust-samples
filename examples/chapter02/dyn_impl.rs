@@ -21,8 +21,6 @@ fn static_make_sound(animal: &impl Animal) {
     println!("{}", animal.make_sound());
 }
 
-
-
 // 動的ディスパッチ
 fn dynamic_make_sound(animal: &dyn Animal) {
     println!("{}", animal.make_sound());
@@ -33,8 +31,8 @@ fn main() {
     let cat = Cat;
 
     // 静的ディスパッチ
-    static_make_sound(&dog);  // コンパイル時に Dog 用のコードが生成
-    static_make_sound(&cat);  // コンパイル時に Cat 用のコードが生成
+    static_make_sound(&dog); // コンパイル時に Dog 用のコードが生成
+    static_make_sound(&cat); // コンパイル時に Cat 用のコードが生成
 
     // 動的ディスパッチ
     dynamic_make_sound(&dog); // 実行時に vtable を参照

@@ -24,7 +24,6 @@ struct Point {
 //     }
 // }
 
-
 fn main() {
     let pair_of_ints = Pair::new(1, 2);
     let pair_of_floats = Pair::new(1.5, 2.5);
@@ -38,5 +37,5 @@ fn main() {
     );
 
     // エラー: Pointは`Display`トレイトを実装していない
-    let pair_of_points = Pair::new(Point { x: 1, y: 2 }, Point { x: 3, y: 4 });
+    //let pair_of_points = Pair::new(Point { x: 1, y: 2 }, Point { x: 3, y: 4 });
 }

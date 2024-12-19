@@ -87,6 +87,13 @@ path = "examples/chapter02/async_trait.rs"
 name = "self"
 path = "examples/chapter02/self.rs"
 
+[[example]]
+name = "associated_constants"
+path = "examples/chapter02/associated_constants.rs"
+
+[[example]]
+name = "associated_types"
+path = "examples/chapter02/associated_types.rs"
 
 [dependencies]
 futures = "0.3.31"

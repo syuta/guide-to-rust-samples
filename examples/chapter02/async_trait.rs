@@ -1,5 +1,5 @@
-use tokio;
 use std::time::Duration;
+use tokio;
 
 // 非同期処理を行うトレイト
 trait AsyncProcessor {
@@ -15,7 +15,6 @@ impl AsyncProcessor for Processor {
         tokio::time::sleep(Duration::from_secs(1)).await;
         value * 3
     }
-
 }
 
 // 複数の非同期処理を実行する関数
