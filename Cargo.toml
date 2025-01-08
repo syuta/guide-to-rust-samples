@@ -95,6 +95,10 @@ path = "examples/chapter02/associated_constants.rs"
 name = "associated_types"
 path = "examples/chapter02/associated_types.rs"
 
+[[example]]
+name = "associated_generics"
+path = "examples/chapter02/associated_generics.rs"
+
 [dependencies]
 futures = "0.3.31"
 tokio = { version = "1.41.1", features = ["full"] }
