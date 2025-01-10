@@ -99,6 +99,20 @@ path = "examples/chapter02/associated_types.rs"
 name = "associated_generics"
 path = "examples/chapter02/associated_generics.rs"
 
+[[example]]
+name = "default_parameter"
+path = "examples/chapter02/default_parameter.rs"
+
+[[example]]
+name = "rpitit_generics"
+path = "examples/chapter02/rpitit_generics.rs"
+
+[[example]]
+name = "rpitit_associated"
+path = "examples/chapter02/rpitit_associated.rs"
+
+
 [dependencies]
 futures = "0.3.31"
 tokio = { version = "1.41.1", features = ["full"] }
+
