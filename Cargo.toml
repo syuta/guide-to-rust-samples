@@ -111,6 +111,25 @@ path = "examples/chapter02/rpitit_generics.rs"
 name = "rpitit_associated"
 path = "examples/chapter02/rpitit_associated.rs"
 
+[[example]]
+name = "drop"
+path = "examples/chapter03/drop.rs"
+
+[[example]]
+name = "debug"
+path = "examples/chapter03/debug.rs"
+
+[[example]]
+name = "default"
+path = "examples/chapter03/default.rs"
+
+[[example]]
+name = "conversion_reference"
+path = "examples/chapter03/conversion_reference.rs"
+
+[[example]]
+name = "from_into"
+path = "examples/chapter03/from_into.rs"
 
 [dependencies]
 futures = "0.3.31"
