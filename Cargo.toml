@@ -100,6 +100,10 @@ name = "associated_generics"
 path = "examples/chapter02/associated_generics.rs"
 
 [[example]]
+name = "inherit_trait"
+path = "examples/chapter02/inherit_trait.rs"
+
+[[example]]
 name = "default_parameter"
 path = "examples/chapter02/default_parameter.rs"
 
@@ -132,12 +136,34 @@ name = "from_into"
 path = "examples/chapter03/from_into.rs"
 
 [[example]]
+name = "tryfrom_tryinto"
+path = "examples/chapter03/tryfrom_tryinto.rs"
+
+[[example]]
 name = "option"
 path = "examples/chapter03/option.rs"
 
 [[example]]
 name = "result"
 path = "examples/chapter03/result.rs"
+
+[[example]]
+name = "asref_asmut"
+path = "examples/chapter03/asref_asmut.rs"
+
+[[example]]
+name = "deref"
+path = "examples/chapter03/deref.rs"
+
+[[example]]
+name = "toowned"
+path = "examples/chapter03/toowned.rs"
+
+[[example]]
+name = "maybe_uninit"
+path = "examples/chapter03/maybe_uninit.rs"
+
+
 
 [dependencies]
 futures = "0.3.31"
