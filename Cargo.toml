@@ -163,6 +163,13 @@ path = "examples/chapter03/toowned.rs"
 name = "maybe_uninit"
 path = "examples/chapter03/maybe_uninit.rs"
 
+[[example]]
+name = "refcell"
+path = "examples/chapter03/refcell.rs"
+
+[[example]]
+name = "unsafecell"
+path = "examples/chapter03/unsafecell.rs"
 
 
 [dependencies]
