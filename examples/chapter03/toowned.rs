@@ -13,7 +13,7 @@ fn process_string(input: &str) -> Cow<str> {
 fn main() {
     let s1 = "hello foo world";
     let s2 = "hello world";
-    
-    println!("{}", process_string(s1));  // "hello bar world"
-    println!("{}", process_string(s2));  // "hello world"
+
+    println!("{}", process_string(s1)); // "hello bar world"
+    println!("{}", process_string(s2)); // "hello world"
 }

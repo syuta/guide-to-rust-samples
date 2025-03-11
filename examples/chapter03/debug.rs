@@ -11,8 +11,11 @@ struct Product {
 // Displayトレイト実装
 impl fmt::Display for Product {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "{} (¥{}) - {} in stock", 
-            self.name, self.price, self.stock)
+        write!(
+            f,
+            "{} (¥{}) - {} in stock",
+            self.name, self.price, self.stock
+        )
     }
 }
 

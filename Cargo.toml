@@ -128,10 +128,6 @@ name = "default"
 path = "examples/chapter03/default.rs"
 
 [[example]]
-name = "conversion_reference"
-path = "examples/chapter03/conversion_reference.rs"
-
-[[example]]
 name = "from_into"
 path = "examples/chapter03/from_into.rs"
 
@@ -171,8 +167,25 @@ path = "examples/chapter03/refcell.rs"
 name = "unsafecell"
 path = "examples/chapter03/unsafecell.rs"
 
+[[example]]
+name = "struct_update"
+path = "examples/chapter04/struct_update.rs"
+
+[[example]]
+name = "struct_pattern"
+path = "examples/chapter04/struct_pattern.rs"
+
+[[example]]
+name = "turbofish"
+path = "examples/chapter04/turbofish.rs"
+
+[[example]]
+name = "raw_string"
+path = "examples/chapter04/raw_string.rs"
+
 
 [dependencies]
 futures = "0.3.31"
+regex = "1.11.1"
 tokio = { version = "1.41.1", features = ["full"] }
 

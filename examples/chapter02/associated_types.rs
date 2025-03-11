@@ -79,5 +79,5 @@ fn main() {
 
     // 関連型を使用
     ContainerAssoc::set_value(&mut storage2, "Hello2".to_string());
-    print!("String value: {}",storage2.get_value());
+    print!("String value: {}", storage2.get_value());
 }

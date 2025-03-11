@@ -37,7 +37,7 @@ fn read_file(path: &str) -> Result<String, io::Error> {
 fn main() {
     // 基本的な使い方
     let file_result = File::open("non_existent.txt");
-    
+
     // matchでの使用（参照を使用）
     match &file_result {
         Ok(_file) => println!("ファイルを開きました"),
@@ -52,17 +52,17 @@ fn main() {
 
     // Result with unwrap関連
     let result: Result<i32, &str> = Ok(10);
-    
+
     // unwrap - エラーの場合はパニック
-    let value = result.unwrap();  // 10
+    let value = result.unwrap(); // 10
     println!("unwrap: {}", value);
 
     // unwrap_or - エラーの場合はデフォルト値を返す
-    let value = result.unwrap_or(0);  // 10
+    let value = result.unwrap_or(0); // 10
     println!("unwrap_or: {}", value);
 
     let err_value: Result<i32, &str> = Err("error");
-    let value = err_value.unwrap_or(0);  // 0
+    let value = err_value.unwrap_or(0); // 0
     println!("error unwrap_or: {}", value);
 
     // expect - カスタムメッセージでパニック

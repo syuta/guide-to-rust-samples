@@ -1,23 +1,29 @@
 // コレクション操作を定義するトレイト
 trait MyCollection<T> {
-    type MyIter<'a>: Iterator<Item = &'a T> where Self: 'a, T: 'a;
+    type MyIter<'a>: Iterator<Item = &'a T>
+    where
+        Self: 'a,
+        T: 'a;
     fn iter(&self) -> Self::MyIter<'_>;
     fn add(&mut self, item: T);
 }
 
 // Vec<T>をラップした構造体
 struct SimpleCollection<T> {
-    items: Vec<T>
+    items: Vec<T>,
 }
 
 // SimpleCollection<T>にCollectionトレイトを実装
 impl<T> MyCollection<T> for SimpleCollection<T> {
-    type MyIter<'a> = std::slice::Iter<'a, T> where T: 'a;
-    
+    type MyIter<'a>
+        = std::slice::Iter<'a, T>
+    where
+        T: 'a;
+
     fn iter(&self) -> Self::MyIter<'_> {
         self.items.iter()
     }
-    
+
     fn add(&mut self, item: T) {
         self.items.push(item);
     }
@@ -41,12 +47,12 @@ fn main() {
     numbers.add(1);
     numbers.add(2);
     numbers.add(3);
-    
+
     // 文字列のコレクション
     let mut words = SimpleCollection { items: Vec::new() };
     words.add(String::from("Hello"));
     words.add(String::from("World"));
-    
+
     // 両方のコレクションを処理
     process_collection(&numbers);
     println!("---");

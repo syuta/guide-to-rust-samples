@@ -27,12 +27,12 @@ impl Parseable for Data {}
 
 fn main() {
     let data = Data {
-        data: "my data1,my data2,my data3".to_string()
+        data: "my data1,my data2,my data3".to_string(),
     };
 
     let read_data = data.read();
     println!("read_data: {}", read_data);
 
     let parsed_data = data.parse();
-    print!("parsed_data: {:?}" , parsed_data);
+    print!("parsed_data: {:?}", parsed_data);
 }

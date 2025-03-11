@@ -2,7 +2,7 @@ fn main() {
     // 基本的な使い方
     let some_num = Some(42);
     let _none_num: Option<i32> = None;
-    
+
     // matchを使用
     match some_num {
         Some(n) => println!("値: {}", n),
@@ -36,16 +36,16 @@ fn main() {
 
     // よく使う関数の例
     let opt = Some(10);
-    
+
     // unwrap関連
-    let value = opt.unwrap();  // 10
+    let value = opt.unwrap(); // 10
     println!("unwrap: {}", value);
 
-    let value = opt.unwrap_or(0);  // 10
+    let value = opt.unwrap_or(0); // 10
     println!("unwrap_or: {}", value);
 
     let none_value: Option<i32> = None;
-    let value = none_value.unwrap_or(0);  // 0
+    let value = none_value.unwrap_or(0); // 0
     println!("none unwrap_or: {}", value);
 
     // unwrap_or_else
@@ -53,7 +53,7 @@ fn main() {
     println!("unwrap_or_else: {}", value);
 
     // map関連
-    let mapped = opt.map(|x| x * 3);  // Some(30)
+    let mapped = opt.map(|x| x * 3); // Some(30)
     println!("map: {:?}", mapped);
 
     let x_none: Option<i32> = None;
@@ -104,7 +104,7 @@ fn main() {
     println!("copied: {:?}", y);
 
     // clonedの例（修正版）
-    let hello = String::from("hello");  // 先に変数を作成
+    let hello = String::from("hello"); // 先に変数を作成
     let x: Option<&String> = Some(&hello);
     let y: Option<String> = x.cloned();
     println!("cloned: {:?}", y);

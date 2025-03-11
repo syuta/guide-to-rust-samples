@@ -19,16 +19,16 @@ impl TryFrom<i32> for EvenNumber {
 fn main() {
     // TryFromを使用
     let even = EvenNumber::try_from(8);
-    println!("TryFromの結果: {:?}", even);  // Ok(EvenNumber(8))
+    println!("TryFromの結果: {:?}", even); // Ok(EvenNumber(8))
 
     // TryIntoを使用（自動的に実装されている）
     let result: Result<EvenNumber, _> = 8_i32.try_into();
-    println!("TryIntoの結果: {:?}", result);  // Ok(EvenNumber(8))
-    
+    println!("TryIntoの結果: {:?}", result); // Ok(EvenNumber(8))
+
     // 変換が失敗するケース
     let odd = EvenNumber::try_from(5);
-    println!("奇数の変換: {:?}", odd);   // Err("奇数は変換できません")
-    
+    println!("奇数の変換: {:?}", odd); // Err("奇数は変換できません")
+
     let odd_result: Result<EvenNumber, _> = 5_i32.try_into();
-    println!("奇数のTryInto: {:?}", odd_result);  // Err("奇数は変換できません")
+    println!("奇数のTryInto: {:?}", odd_result); // Err("奇数は変換できません")
 }

@@ -1,9 +1,9 @@
 #[derive(Default, Debug)]
 struct Config {
-    name: String,        // String implements Default
-    count: i32,         // i32 implements Default
-    enabled: bool,      // bool implements Default
-    tags: Vec<String>,  // Vec<T> implements Default
+    name: String,      // String implements Default
+    count: i32,        // i32 implements Default
+    enabled: bool,     // bool implements Default
+    tags: Vec<String>, // Vec<T> implements Default
 }
 
 #[derive(Debug)]
