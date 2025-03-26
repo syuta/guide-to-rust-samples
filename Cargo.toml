@@ -183,9 +183,27 @@ path = "examples/chapter04/turbofish.rs"
 name = "raw_string"
 path = "examples/chapter04/raw_string.rs"
 
+[[example]]
+name = "global_static"
+path = "examples/chapter05/global_static.rs"
+
+[[example]]
+name = "singleton"
+path = "examples/chapter05/singleton.rs"
+
+[[example]]
+name = "lazy_static"
+path = "examples/chapter05/lazy_static.rs"
+
+[[example]]
+name = "once_cell"
+path = "examples/chapter05/once_cell.rs"
+
 
 [dependencies]
 futures = "0.3.31"
+lazy_static = "1.5.0"
+once_cell = "1.21.1"
 regex = "1.11.1"
 tokio = { version = "1.41.1", features = ["full"] }
 
