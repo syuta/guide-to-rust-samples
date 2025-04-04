@@ -199,11 +199,45 @@ path = "examples/chapter05/lazy_static.rs"
 name = "once_cell"
 path = "examples/chapter05/once_cell.rs"
 
+[[example]]
+name = "error_trait"
+path = "examples/chapter06/error_trait.rs"
+
+[[example]]
+name = "error_custom"
+path = "examples/chapter06/error_custom.rs"
+
+[[example]]
+name = "dyn_error"
+path = "examples/chapter06/dyn_error.rs"
+
+[[example]]
+name = "error_cause"
+path = "examples/chapter06/error_cause.rs"
+
+[[example]]
+name = "error_anyhow"
+path = "examples/chapter06/error_anyhow.rs"
+
+[[example]]
+name = "thiserror_anyhow"
+path = "examples/chapter06/thiserror_anyhow.rs"
+
+[[example]]
+name = "error_anyhow_others"
+path = "examples/chapter06/error_anyhow_others.rs"
+
+[[example]]
+name = "thiserror_anyhow_useful"
+path = "examples/chapter06/thiserror_anyhow_useful.rs"
+
 
 [dependencies]
+anyhow = "1.0.97"
 futures = "0.3.31"
 lazy_static = "1.5.0"
 once_cell = "1.21.1"
 regex = "1.11.1"
+thiserror = "2.0.12"
 tokio = { version = "1.41.1", features = ["full"] }
 
