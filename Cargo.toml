@@ -116,6 +116,10 @@ name = "rpitit_associated"
 path = "examples/chapter02/rpitit_associated.rs"
 
 [[example]]
+name = "trait_upcast"
+path = "examples/chapter02/trait_upcast.rs"
+
+[[example]]
 name = "drop"
 path = "examples/chapter03/drop.rs"
 
@@ -231,6 +235,21 @@ path = "examples/chapter06/error_anyhow_others.rs"
 name = "thiserror_anyhow_useful"
 path = "examples/chapter06/thiserror_anyhow_useful.rs"
 
+[[example]]
+name = "visibility"
+path = "examples/chapter07/visibility.rs"
+
+[[example]]
+name = "visibility_qualifier"
+path = "examples/chapter07/visibility_qualifier.rs"
+
+[[example]]
+name = "visibility_trait_enum"
+path = "examples/chapter07/visibility_trait.rs"
+
+[[example]]
+name = "visibility_path"
+path = "examples/chapter07/visibility_path.rs"
 
 [dependencies]
 anyhow = "1.0.97"
