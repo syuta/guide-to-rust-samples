@@ -1,0 +1,23 @@
+[package]
+name = "profile_demo"
+version = "0.1.0"
+edition = "2024"
+
+# 開発プロファイルの設定例
+[profile.dev]
+opt-level = 0           # 最適化レベル (0-3)
+debug = true            # デバッグ情報を含める
+
+# リリースプロファイルの設定例
+[profile.release]
+opt-level = 3           # 最大の最適化
+debug = false           # デバッグ情報を含めない
+lto = true              # リンク時最適化を有効化
+strip = true            # シンボル情報の削除
+
+# 本番デバッグ用カスタムプロファイル設定例
+[profile.release-with-debug]
+inherits = "release"    # releaseプロファイルの設定を継承
+debug = true            # デバッグ情報を追加
+
+[dependencies]

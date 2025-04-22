@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "common",
+    "app1",
+    "app2",
+]
+
